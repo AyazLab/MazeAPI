@@ -65,6 +65,8 @@ struct mCOMMstr
 	EXPORT	__declspec(dllexport)int SetDynModelRotationScale(int dynID, double xRot, double yRot, double zRot, double scale);
 	EXPORT	__declspec(dllexport)int SetDynModelToNewModel(int dynID, int newModelID);
 	EXPORT	_declspec(dllexport)int GetDynModelIDbyLabel(char* label);
+	EXPORT	_declspec(dllexport)int GetDynModelStatus(int dID);
+	EXPORT	_declspec(dllexport)int GetDynModelStatus(char* label);
 	EXPORT	_declspec(dllexport)int GetDynModelPositionAndModel(int dID, double vec[]);
 	EXPORT	_declspec(dllexport)int GetDynModelPositionAndModel(char* label, double vec[]);
 	EXPORT	_declspec(dllexport)int GetDynModelRotationAndScale(int dID, double vec[]);

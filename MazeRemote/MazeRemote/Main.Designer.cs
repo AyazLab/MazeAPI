@@ -57,24 +57,27 @@
             this.nextButton = new System.Windows.Forms.Button();
             this.boundedCheck = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.turnSizeText = new System.Windows.Forms.TextBox();
             this.stepsizeText = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.setScoreButton = new System.Windows.Forms.Button();
-            this.getScoreButton = new System.Windows.Forms.Button();
             this.scoreTextBox = new System.Windows.Forms.TextBox();
+            this.getScoreButton = new System.Windows.Forms.Button();
+            this.setScoreButton = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button_getStatus = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // ConnectButton
@@ -361,6 +364,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Remote Control";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 213);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 13);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Action Config";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -394,15 +406,6 @@
             this.stepsizeText.Size = new System.Drawing.Size(56, 20);
             this.stepsizeText.TabIndex = 15;
             this.stepsizeText.Text = "5";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 213);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 13);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "Action Config";
             // 
             // groupBox2
             // 
@@ -453,20 +456,19 @@
             this.groupBox5.Controls.Add(this.setScoreButton);
             this.groupBox5.Location = new System.Drawing.Point(289, 270);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(149, 102);
+            this.groupBox5.Size = new System.Drawing.Size(149, 56);
             this.groupBox5.TabIndex = 37;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Score Activation";
             // 
-            // setScoreButton
+            // scoreTextBox
             // 
-            this.setScoreButton.Location = new System.Drawing.Point(104, 22);
-            this.setScoreButton.Name = "setScoreButton";
-            this.setScoreButton.Size = new System.Drawing.Size(39, 23);
-            this.setScoreButton.TabIndex = 0;
-            this.setScoreButton.Text = "Set";
-            this.setScoreButton.UseVisualStyleBackColor = true;
-            this.setScoreButton.Click += new System.EventHandler(this.setScoreButton_Click);
+            this.scoreTextBox.Location = new System.Drawing.Point(13, 23);
+            this.scoreTextBox.MaxLength = 10;
+            this.scoreTextBox.Name = "scoreTextBox";
+            this.scoreTextBox.Size = new System.Drawing.Size(39, 20);
+            this.scoreTextBox.TabIndex = 23;
+            this.scoreTextBox.Text = "0";
             // 
             // getScoreButton
             // 
@@ -478,20 +480,42 @@
             this.getScoreButton.UseVisualStyleBackColor = true;
             this.getScoreButton.Click += new System.EventHandler(this.getScoreButton_Click);
             // 
-            // scoreTextBox
+            // setScoreButton
             // 
-            this.scoreTextBox.Location = new System.Drawing.Point(13, 23);
-            this.scoreTextBox.MaxLength = 10;
-            this.scoreTextBox.Name = "scoreTextBox";
-            this.scoreTextBox.Size = new System.Drawing.Size(39, 20);
-            this.scoreTextBox.TabIndex = 23;
-            this.scoreTextBox.Text = "0";
+            this.setScoreButton.Location = new System.Drawing.Point(104, 22);
+            this.setScoreButton.Name = "setScoreButton";
+            this.setScoreButton.Size = new System.Drawing.Size(39, 23);
+            this.setScoreButton.TabIndex = 0;
+            this.setScoreButton.Text = "Set";
+            this.setScoreButton.UseVisualStyleBackColor = true;
+            this.setScoreButton.Click += new System.EventHandler(this.setScoreButton_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.button_getStatus);
+            this.groupBox6.Location = new System.Drawing.Point(289, 332);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(153, 42);
+            this.groupBox6.TabIndex = 38;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Status";
+            // 
+            // button_getStatus
+            // 
+            this.button_getStatus.Location = new System.Drawing.Point(59, 10);
+            this.button_getStatus.Name = "button_getStatus";
+            this.button_getStatus.Size = new System.Drawing.Size(75, 23);
+            this.button_getStatus.TabIndex = 2;
+            this.button_getStatus.Text = "GetStatus";
+            this.button_getStatus.UseVisualStyleBackColor = true;
+            this.button_getStatus.Click += new System.EventHandler(this.Button_getStatus_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 424);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -518,6 +542,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -566,6 +591,8 @@
         private System.Windows.Forms.TextBox scoreTextBox;
         private System.Windows.Forms.Button getScoreButton;
         private System.Windows.Forms.Button setScoreButton;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button button_getStatus;
     }
 }
 

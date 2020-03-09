@@ -237,6 +237,16 @@ namespace MazeRemote
             mazeCOMM.SetScore(scoreValue);
         }
 
+        private void Button_getStatus_Click(object sender, EventArgs e)
+        {
+            getInternalValues();
+
+            char[] mazeStatus=new char[256];
+            int ret=mazeCOMM.GetStatus(@mazeStatus);
+
+            updateText.Text = mazeStatus.ToString();
+        }
+
         private void nextButton_Click(object sender, EventArgs e)
         {
             getInternalValues();

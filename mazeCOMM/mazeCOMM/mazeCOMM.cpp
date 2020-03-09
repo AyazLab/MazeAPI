@@ -204,6 +204,8 @@ struct mCOMMstr
 	__declspec(dllexport)int SetDynModelRotationScale(int dynID, double xRot, double yRot, double zRot, double scale);
 	__declspec(dllexport)int SetDynModelToNewModel(int dynID, int newModelID);
 	__declspec(dllexport)int GetDynModelIDbyLabel(char* label);
+	__declspec(dllexport)int GetDynModelStatus(int dID);
+	__declspec(dllexport)int GetDynModelStatus(char* label);
 	__declspec(dllexport)int GetDynModelPositionAndModel(int dID, double vec[]);
 	__declspec(dllexport)int GetDynModelPositionAndModel(char* label, double vec[]);
 	__declspec(dllexport)int GetDynModelRotationAndScale(int dID, double vec[]);
@@ -874,6 +876,51 @@ _declspec(dllexport)int mCOMMstr::GetDynModelRotationAndScale(char* label, doubl
 		vec[3] = m.dArgs[3];
 		vec[4] = m.iArg;
 		return 1;
+	}
+	else
+	{
+		return -1;
+	}
+}
+
+
+
+_declspec(dllexport)int mCOMMstr::GetDynModelStatus(int dID)
+{
+	int ret = mCOMMstr::Send(291, dID);
+
+
+	tcpMessage m;
+	do {
+		m = mCOMMstr::Receive();
+	} while (m.command != 291 && m.command != -1000);
+
+	if (m.command == 291 && m.command != -999)
+	{
+
+		return m.iArg;
+	}
+	else
+	{
+		return -1;
+	}
+}
+
+_declspec(dllexport)int mCOMMstr::GetDynModelStatus(char* label)
+{
+	tcpMessage m;
+	m.storeStringInArr(label);
+	m.command = 291;
+	m.iArg = -1;
+	int ret = mCOMMstr::Send(m);
+
+	do {
+		m = mCOMMstr::Receive();
+	} while (m.command != 291 && m.command != -1000);
+
+	if (m.command == 291 && m.command != -999)
+	{
+		return m.iArg;
 	}
 	else
 	{

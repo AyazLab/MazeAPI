@@ -7,3 +7,13 @@ D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\bin\Debug\
 D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\bin\Debug\MazeRemote.pdb
 D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.exe
 D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.pdb
+D:\GitHub\MazeAPI\MazeRemote\MazeRemote\bin\Debug\MazeRemote.exe.config
+D:\GitHub\MazeAPI\MazeRemote\MazeRemote\bin\Debug\MazeRemote.exe
+D:\GitHub\MazeAPI\MazeRemote\MazeRemote\bin\Debug\MazeRemote.pdb
+D:\GitHub\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.csprojAssemblyReference.cache
+D:\GitHub\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.Main.resources
+D:\GitHub\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.Properties.Resources.resources
+D:\GitHub\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.csproj.GenerateResource.cache
+D:\GitHub\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.csproj.CoreCompileInputs.cache
+D:\GitHub\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.exe
+D:\GitHub\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.pdb

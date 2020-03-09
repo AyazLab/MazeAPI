@@ -69,12 +69,12 @@ namespace MazeRemote
 		
 		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetElapsedTime@mCOMMstr@@QAEHXZ")]
         public static extern int GetElapsedTime();
-		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetStatus@mCOMMstr@@QAEHXZ@Z")]
+		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetStatus@mCOMMstr@@QAEHXZ")]
         public static extern int GetStatus();
 		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetStatus@mCOMMstr@@QAEHPAD@Z")]
-        public static extern int GetStatus(char[] statusStr);
+        public static extern int GetStatus(StringBuilder statusStr);
 		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetCurrentMazeName@mCOMMstr@@QAEHPAD@Z")]
-        public static extern int GetCurrentMazeName(char[] mazeName);
+        public static extern int GetCurrentMazeName(StringBuilder mazeName);
 		
 		
 		//Movement
@@ -141,6 +141,11 @@ namespace MazeRemote
         public static extern int GetDynModelRotationAndScale(int dID, double[] vec);
 		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetDynModelRotationAndScale@mCOMMstr@@QAEHPADQAN@Z")]
         unsafe public static extern int GetDynModelRotationAndScale(StringBuilder label, double[] vec);
+		
+		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetDynModelStatus@mCOMMstr@@QAEHH@Z")]
+        public static extern int GetDynModelStatus(ind dID);
+		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetDynModelStatus@mCOMMstr@@QAEHPAD@Z")]
+        public static extern int GetDynModelStatus(StringBuilder label);
 
 		
 		
