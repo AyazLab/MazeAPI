@@ -67,6 +67,16 @@ namespace MazeRemote
 		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetNextMarker@mCOMMstr@@QAEHPAH0@Z")]
         public static extern int GetNextMarker(int[] code, int[] val);
 		
+		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetElapsedTime@mCOMMstr@@QAEHXZ")]
+        public static extern int GetElapsedTime();
+		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetStatus@mCOMMstr@@QAEHXZ@Z")]
+        public static extern int GetStatus();
+		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetStatus@mCOMMstr@@QAEHPAD@Z")]
+        public static extern int GetStatus(char[] statusStr);
+		[DllImport("mazeCOMM.DLL", EntryPoint = "?GetCurrentMazeName@mCOMMstr@@QAEHPAD@Z")]
+        public static extern int GetCurrentMazeName(char[] mazeName);
+		
+		
 		//Movement
 			//Metered Movement
 		[DllImport("mazeCOMM.DLL", EntryPoint = "?BoundedMovement@mCOMMstr@@QAEH_N@Z")]
