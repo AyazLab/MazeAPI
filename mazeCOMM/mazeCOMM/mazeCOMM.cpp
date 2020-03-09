@@ -168,6 +168,11 @@ struct mCOMMstr
 	__declspec(dllexport) int SetRotation(double angle);
 	__declspec(dllexport) int GetNextMarker(int *code, int* val);
 
+	__declspec(dllexport) int GetElapsedTime();
+	__declspec(dllexport) int GetStatus();
+	__declspec(dllexport) int GetStatus(char* statusStr);
+	__declspec(dllexport) int GetCurrentMazeName(char* mazeName);
+
 	//Movement
 		//Metered Movement
 	__declspec(dllexport)int BoundedMovement(bool enable);
@@ -367,6 +372,31 @@ __declspec(dllexport) int mCOMMstr::InstantSetScore(int iArg)
 	return mCOMMstr::Send(2,iArg);
 }
 
+__declspec(dllexport) int  mCOMMstr::GetCurrentMazeName(char* mazeName)
+{
+	int ret = mCOMMstr::Send(103, 103, 0, 0, 0, 0);
+
+
+	tcpMessage m;
+	do {
+		m = mCOMMstr::Receive();
+	} while (m.command != 103 && m.command != -1000);
+
+	if (m.command == 103)
+	{
+		sprintf(mazeName,"%s", m.getStringFromArr());
+		return m.iArg;
+	}
+	else
+	{
+		sprintf(mazeName, "Error");
+		return -1;
+	}
+
+	return 0;
+
+}
+
 __declspec(dllexport) int  mCOMMstr::GetScore()
 {
 	int ret = mCOMMstr::Send(12, 12, 0, 0, 0, 0);
@@ -390,6 +420,105 @@ __declspec(dllexport) int  mCOMMstr::GetScore()
 	return 0;
 
 }
+
+__declspec(dllexport) int  mCOMMstr::GetElapsedTime()
+{
+	int ret = mCOMMstr::Send(102, 102, 0, 0, 0, 0);
+
+
+	tcpMessage m;
+	do {
+		m = mCOMMstr::Receive();
+	} while (m.command != 102 && m.command != -1000);
+
+	if (m.command == 102)
+	{
+
+		return m.iArg;
+	}
+	else
+	{
+		return -1;
+	}
+
+	return 0;
+
+}
+
+__declspec(dllexport) int  mCOMMstr::GetStatus()
+{
+	int ret = mCOMMstr::Send(101, 101, 0, 0, 0, 0);
+
+
+	tcpMessage m;
+	do {
+		m = mCOMMstr::Receive();
+	} while (m.command != 101 && m.command != -1000);
+
+	if (m.command == 101)
+	{
+
+		return m.iArg;
+	}
+	else
+	{
+		return -1;
+	}
+
+	return 0;
+
+}
+
+__declspec(dllexport) int  mCOMMstr::GetStatus(char* statusStr)
+{
+	int ret = mCOMMstr::Send(101, 101, 0, 0, 0, 0);
+
+
+	tcpMessage m;
+	do {
+		m = mCOMMstr::Receive();
+	} while (m.command != 101 && m.command != -1000);
+
+	if (m.command == 101)
+	{
+		switch (m.iArg)
+		{
+			case 0:
+				sprintf(statusStr, "Loading");
+				break;
+			case 1:
+				sprintf(statusStr, "Waiting for API");
+				break;
+			case 2:
+				sprintf(statusStr, "Waiting for Cue");
+				break;
+			case 3:
+				sprintf(statusStr, "MazeList Message");
+				break;
+			case 4:
+				sprintf(statusStr, "Maze Running");
+				break;
+			case 5:
+				sprintf(statusStr, "Maze Paused");
+				break;
+			default:
+				sprintf(statusStr, "Other");
+				break;
+		}
+
+
+
+		return m.iArg;
+	}
+	else
+	{
+		return -1;
+	}
+
+	return 0;
+
+}
+
 
 __declspec(dllexport) int mCOMMstr::MoveForward(double dist)
 {

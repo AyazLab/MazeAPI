@@ -42,6 +42,11 @@ struct mCOMMstr
 	EXPORT __declspec(dllexport) int SetMoveSpeed(bool setToDefault);
 	EXPORT __declspec(dllexport) int SetMoveSpeed(bool setToDefault, double moveSpeed);
 
+	EXPORT __declspec(dllexport) int GetElapsedTime();
+	EXPORT __declspec(dllexport) int GetStatus();
+	EXPORT __declspec(dllexport) int GetStatus(char* statusStr);
+	EXPORT __declspec(dllexport) int GetCurrentMazeName(char* mazeName);
+
 	EXPORT __declspec(dllexport)int InstantSetScore(int iArg);
 	EXPORT __declspec(dllexport)int GetScore();
 	EXPORT __declspec(dllexport)int Pause();
