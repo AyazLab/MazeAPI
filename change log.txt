@@ -1,0 +1,10 @@
+MAZE API Change Log
+
+1.1.0.0 (201711)
+Added support to disable Gravity via API
+Added support to Get and Set model position, rotation, scale, ID and name
+
+1.0.0.1 (201703)
+Added set/reset move speed option
+	MazeCOMM include SetMoveSpeed function
+Added support for compiling sample application mazeCommBridge without C++ std lib

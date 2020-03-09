@@ -1,0 +1,9 @@
+D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.csprojResolveAssemblyReference.cache
+D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.Main.resources
+D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.Properties.Resources.resources
+D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.csproj.GenerateResource.Cache
+D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\bin\Debug\MazeRemote.exe.config
+D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\bin\Debug\MazeRemote.exe
+D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\bin\Debug\MazeRemote.pdb
+D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.exe
+D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\MazeRemote\MazeRemote\obj\Debug\MazeRemote.pdb

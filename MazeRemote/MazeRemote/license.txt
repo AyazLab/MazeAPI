@@ -1,0 +1,84 @@
+Copyright (c) 2014 Adrian Curtin, Hasan Ayaz
+All rights reserved.
+
+IMPORTANT - READ BEFORE COPYING, INSTALLING OR USING.
+ 
+Do not copy, install, or use the "Materials" provided under 
+this license agreement ("Agreement"), until you have carefully
+read the following terms and conditions.
+
+By copying, installing, or otherwise using the Materials, 
+you agree to be bound by the terms of this Agreement. 
+If you do not agree to the terms of this Agreement,
+do not copy, install, or use the Materials.
+ 
+LICENSE GRANT: Subject to the License Restrictions below, 
+mazesuite.com grants to you (the "Licensee") the following non-exclusive, 
+non-assignable royalty-free copyright licenses in the "Materials" below, 
+which are identified specifically in License Definitions, and in any 
+updates thereto that CenterSpace Software may offer in the future.
+ 
+LICENSE DEFINITIONS: Materials are defined as consisting of 
+Source Code, Binary Libraries, Sample Source, and Documentation.
+
+Licensee: One software developer using this software on one computer (one workstation). 
+Any software developer that works on a project that makes calls to the 
+Materials (in any non-executable form) shall be considered a Licensee, 
+and must either have their own individual license or be part of a group license.
+ 
+Source Code: may include files containing programming statements that are 
+human-readable and are written in any .NET programming language, including 
+the C# (CSharp) and Managed C++ programming languages. You may not use, copy 
+or redistribute them.
+ 
+Binary Libraries: may include dynamically linkable library files 
+(.NET assemblies) and support files. You may use them internally. 
+You may redistribute Binary Libraries with applications you develop 
+that make use of or incorporate them, provided such applications do not expose mazesuite 
+application programming interfaces either directly or indirectly.
+ 
+Sample Source: may include example interface or application source code. 
+You may copy, modify and compile the Sample Source.
+ 
+Documentation: may include reference and user documentation. 
+You may use them internally for the purposes of evaluating the Materials 
+as licensed hereunder, but you may not copy or redistribute them.
+ 
+LICENSE RESTRICTIONS: You may not reverse-assemble, reverse-compile, 
+or otherwise reverse-engineer any software provided solely in binary form. 
+You may NOT post any of the Materials to a bulletin-board site, 
+or website without prior written consent. In addition, YOU MAY NOT CREATE 
+A UTILITY PROGRAM OF SIMILAR NATURE TO THIS PRODUCT.
+
+EVALUATION PERIOD: This license if valid for a thirty-day (30-day) Evaluation Period. 
+Upon expiration of the Evaluation Period, you must either purchase a license key
+or make reasonable efforts to destroy all Binaries, Sample Source, and Documentation.
+
+COPYRIGHT: Title to the Materials and all copies thereof remain with Hasan Ayaz.
+The Materials are copyrighted and are protected by United States copyright laws 
+and international treaty provisions. You will not remove any copyright notice 
+from the Materials. You agree to prevent any unauthorized copying of the Materials. 
+Except as expressly provided herein, mazesuite.com does not grant any express or 
+implied right to you under mazesuite.com patents, copyrights, trademarks, 
+or trade secret information.
+
+REPLACEMENTS: The Materials are provided "AS IS" without warranty of any kind. 
+If the media on which the Materials are furnished are found to be defective 
+in material or workmanship under normal use for a period of ninety (90) days 
+from the date of receipt, mazesuite.com's entire liability and your exclusive remedy
+shall be the replacement of the media. This offer is void if the media defect
+results from accident, abuse, or misapplication.
+
+LIMITATION OF LIABILITY: THIS SOFTWARE IS PROVIDED 'AS IS' AND 
+WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+NEITHER mazesuite.com NOR ITS SUPPLIERS SHALL BE LIABLE FOR ANY DAMAGES 
+WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS 
+PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR OTHER LOSS)
+ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE,
+EVEN IF mazesuite.com HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+TERMINATION OF THIS LICENSE: mazesuite.com may terminate this license at any time
+if you are in breach of any of its terms and conditions. Upon termination,
+you will immediately destroy the Materials or return all copies of the Materials
+to mazesuite.com along with any copies you have made.

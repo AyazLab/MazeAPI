@@ -1,0 +1,8 @@
+﻿  mazeCommBridge.cpp
+mazeCommBridge.cpp(42): warning C4101: 'rc': unreferenced local variable
+mazeCommBridge.cpp(37): warning C4101: 'i': unreferenced local variable
+mazeCommBridge.cpp(70): warning C4101: 'e': unreferenced local variable
+mazeCommBridge.cpp(99): warning C4101: 'e': unreferenced local variable
+D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1202,5): warning MSB8030: The linker switch "Minimum Required Version" requires "SubSystem" to be set.  Without "SubSystem", the "Minimum Required Version" would not be passed to linker and could prevent to the output binary from running on older Operating Systems.
+  mazeCommBridge.vcxproj -> D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\mazeCOMM\Release\mazeCommBridge.exe
+  mazeCommBridge.vcxproj -> D:\VSStudio\Visual Studio 2013\Projects\MazeAPI\mazeCOMM\Release\mazeCommBridge.pdb (Full PDB)
