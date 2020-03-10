@@ -66,3 +66,11 @@ mazeCOMM/mazeCOMM/Release/mazeCOMM.pdb
 MazeRemote/MazeRemote/obj/Debug/MazeRemote.csproj.FileListAbsolute.txt
 MazeRemote/MazeRemote/obj/Debug/MazeRemote.csproj.GenerateResource.Cache
 *.pdb
+MazeRemote/MazeRemote/mazeCOMM.dll
+mazeCOMM/mazeCOMM/Release/mazeCommBridge.pdb
+mazeCOMM/mazeCOMM/Release/mazeCommBridge.exe
+mazeCOMM/mazeCOMM/Release/mazeCOMM.pdb
+mazeCOMM/mazeCOMM/Release/mazeCOMM.ipdb
+mazeCOMM/mazeCOMM/Release/mazeCOMM.iobj
+mazeCOMM/mazeCOMM/Release/mazeCOMM.dll
+mazeCOMM/.vs/mazeCOMM/v16/.suo
