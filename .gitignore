@@ -81,3 +81,9 @@ mazeCOMM/mazeCOMM/Release/mazeCOMM.pdb
 mazeCOMM/mazeCOMM/Release/mazeCommBridge.exe
 mazeCOMM/mazeCOMM/Release/mazeCommBridge.pdb
 MazeRemote/MazeRemote/mazeCOMM.dll
+mazeCOMM/.vs/mazeCOMM/v16/.suo
+*.pdb
+*.ipdb
+*.iobj
+*.pdb
+MazeRemote/MazeRemote/mazeCOMM.dll

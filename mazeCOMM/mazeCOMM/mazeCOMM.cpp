@@ -11,7 +11,7 @@ int BytesSent;
 
 struct tcpMessage
 {
-	int command;	//Command code
+	int command= -1000;	//Command code
 	int iArg;		//int argument
 	double dArgs[4]; //double arguments 
 
@@ -298,6 +298,7 @@ __declspec(dllexport) int mCOMMstr::Disconnect()
 	//{
 		closesocket(clientSocket);
 		closesocket(serverSocket);
+
 		WSACleanup();
 	//}
 	connected=false;
@@ -674,6 +675,8 @@ _declspec(dllexport)tcpMessage mCOMMstr::Receive()
 		char bufstar[sizeof(message)+4];
 		unsigned char buf[sizeof(message)+4];
 		result=recv(clientSocket,bufstar,sizeof(message)+4,0);
+
+
 		memcpy(buf,bufstar,44);
 		
 		message.Process(buf);
@@ -683,6 +686,8 @@ _declspec(dllexport)tcpMessage mCOMMstr::Receive()
 	if(result==SOCKET_ERROR)
 	{
 		connected=false;
+		message.command = -1000;
+		message.iArg = -1000;
 	}
 
 	return message;
